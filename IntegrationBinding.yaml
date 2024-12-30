@@ -1,0 +1,12 @@
+apiVersion: integration.ibm.com/v1beta1
+kind: IntegrationBinding
+metadata:
+  name: bindingtemplate
+  namespace: ''
+spec:
+  from:
+    kind: KafkaUser
+    name: example
+  to:
+    - kind: Configuration
+      name: example
